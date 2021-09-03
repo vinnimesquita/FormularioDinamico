@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade Prática 6</title>
+        <meta charset="utf-8">
+        <script src="formulario.js"></script>
+    </head>
+
+    <body onload="mostrarOnLoad()"  >
+        
+        <form name="dados"  >
+            <p>
+                <label for="regiao">*</label> <label>Região:</label><br>
+                <select id="regiao" name="regiao" onchange= "mostrarOnChange()">
+                </select>
+            </p>
+
+            <p>
+                <label for="estado">*</label> <label>Estado:</label><br>
+                <select id="estado" name="estado" >
+                </select>
+            </p>
+
+            <p >
+                <label for="periodo" >*</label> <label>Período:</label><br>
+                <input type="radio" name="periodo" value="1"onchange="mudarPeriodo()"> 1º Período<br>
+                <input type="radio" name="periodo" value="2"onchange="mudarPeriodo()"> 2º Período<br>
+                <input type="radio" name="periodo" value="3"onchange="mudarPeriodo()"> 3º Período<br>
+                <input type="radio" name="periodo" value="4"onchange="mudarPeriodo()"> 4º Período<br>
+                <input type="radio" name="periodo" value="5" onchange="mudarPeriodo()"> Outro
+           
+            </p>
+            <p>
+                
+            </p>
+            
+        </form><br>
+        <button onclick="validar()">Enviar</button>
+    </body><br><br>
+    
+    
+</html>
